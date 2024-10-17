@@ -1,0 +1,94 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .neon {
+    color: #fff;
+    text-shadow: 0 0 5px #00fff0, 0 0 10px #00fff0, 0 0 15px #00fff0, 0 0 20px #00fff0;
+  }
+
+  .hover-3d {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  .hover-3d:hover {
+    transform: rotateY(15deg) rotateX(5deg);
+  }
+
+  .glow-on-hover {
+    position: relative;
+    z-index: 0;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .glow-on-hover::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #00fff0, #00ff87, #ff00ff, #00fff0);
+    background-size: 400%;
+    z-index: -1;
+    transition: all 0.4s ease;
+  }
+
+  .glow-on-hover:hover::before {
+    filter: blur(20px);
+  }
+
+  .glow-on-hover:hover {
+    color: #00fff0;
+  }
+}
+
+
+
+.skill-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  animation: typing 0.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+.skill-text:hover::after {
+  color: inherit;
+  width: 100%;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-right-color: transparent; }
+  50% { border-right-color: black; }
+}
