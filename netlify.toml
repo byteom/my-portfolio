@@ -1,6 +1,3 @@
 [[redirects]]
-  # Redirect for any route that doesn't exist, redirect to index.html for single-page app (SPA)
   from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
+  to = "/"
