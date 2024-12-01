@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
-import Summary from './pages/Summary';
 import Skills from './pages/Skills';
 import Education from './pages/Education';
 import Projects from './pages/Projects';

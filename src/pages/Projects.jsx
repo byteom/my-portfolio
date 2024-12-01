@@ -23,8 +23,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
-      <h2 className="text-4xl font-extrabold text-teal-600 text-center mb-10">Projects</h2>
+    <div className="p-8 bg-gray-100 dark:bg-gray-900 min-h-screen">
+      <h2 className="text-4xl font-extrabold text-teal-600 dark:text-teal-300 text-center mb-10">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, idx) => (
           <ProjectCard
@@ -33,11 +33,12 @@ const Projects = () => {
             description={project.description}
             technologies={project.technologies}
             link={project.link}
+            // If your ProjectCard has dark mode logic, ensure it accepts dark props
           />
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
