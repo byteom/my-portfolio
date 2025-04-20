@@ -2,46 +2,46 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white py-12 px-4 sm:px-8">
-      <div className="max-w-screen-lg mx-auto text-center">
+    <footer className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white py-10 px-4 sm:px-8 font-mono">
+      <div className="max-w-screen-lg mx-auto text-center space-y-6">
         {/* Footer Text */}
-        <p className="text-lg font-semibold mb-6 text-gray-600 dark:text-gray-300">
+        <p className="text-base font-medium text-gray-600 dark:text-gray-300">
           &copy; 2024 Om Singh. All rights reserved.
         </p>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center space-x-8 mb-6">
+        <div className="flex justify-center gap-8">
           <a
             href="https://github.com/byteom"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-teal-500 transition-all duration-300 transform hover:scale-125 dark:text-gray-300 dark:hover:text-teal-400"
+            className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition transform hover:scale-125"
           >
-            <FaGithub size={32} />
+            <FaGithub size={28} />
           </a>
           <a
             href="https://linkedin.com/in/byteom"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-teal-500 transition-all duration-300 transform hover:scale-125 dark:text-gray-300 dark:hover:text-teal-400"
+            className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition transform hover:scale-125"
           >
-            <FaLinkedin size={32} />
+            <FaLinkedin size={28} />
           </a>
           <a
             href="https://twitter.com/byteom"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-teal-500 transition-all duration-300 transform hover:scale-125 dark:text-gray-300 dark:hover:text-teal-400"
+            className="text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition transform hover:scale-125"
           >
-            <FaTwitter size={32} />
+            <FaTwitter size={28} />
           </a>
         </div>
 
         {/* Download Resume Button */}
         <a
-          href="/path-to-your-resume.pdf" // Update with actual resume path
+          href="/path-to-your-resume.pdf" // Update this
           download
-          className="inline-block px-6 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-110 dark:bg-teal-700 dark:hover:bg-teal-800"
+          className="inline-block px-6 py-2 bg-teal-600 text-white font-semibold rounded-lg shadow-md hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-800 transition transform hover:scale-105"
         >
           Download Resume
         </a>
