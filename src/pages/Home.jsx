@@ -58,7 +58,7 @@ const Home = () => {
       {/* Download Resume Button */}
       <div className="mt-16">
         <a
-          href="/path-to-resume.pdf" // Replace with your real resume path
+          href="https://drive.google.com/file/d/1RMjoTx1KfTpIg2uD3gsSCq13NsjWJ5vs/view?usp=sharing" // Replace with your real resume path
           className="inline-block text-lg px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-300 transform hover:scale-105"
           download
         >
