@@ -47,7 +47,7 @@ const Header = () => {
 
       {/* Resume Download */}
       <a
-        href="/path-to-your-resume.pdf"
+        href="https://drive.google.com/file/d/1RMjoTx1KfTpIg2uD3gsSCq13NsjWJ5vs/view?usp=sharing"
         download
         className="mt-4 inline-block px-6 py-3 bg-teal-600 text-white font-semibold rounded-lg shadow-lg hover:bg-teal-700 transition-all duration-300 transform hover:scale-105 dark:bg-teal-700 dark:hover:bg-teal-800"
       >

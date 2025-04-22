@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* Download Resume Button */}
         <a
-          href="/path-to-your-resume.pdf" // Update this
+          href="https://drive.google.com/file/d/1RMjoTx1KfTpIg2uD3gsSCq13NsjWJ5vs/view?usp=sharing" // Update this
           download
           className="inline-block px-6 py-2 bg-teal-600 text-white font-semibold rounded-lg shadow-md hover:bg-teal-700 dark:bg-teal-700 dark:hover:bg-teal-800 transition transform hover:scale-105"
         >
