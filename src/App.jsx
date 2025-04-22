@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
 import OtherTraining from './pages/OtherTraining';
 import Contact from './pages/Contact';
+import Achievements from './pages/Achievements';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/certifications" element={<Certifications />} />
             <Route path="/other-training" element={<OtherTraining />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/achievements" element={<Achievements />} />
           </Routes>
         </main>
 

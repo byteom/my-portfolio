@@ -78,6 +78,18 @@ const NavBar = () => {
             <FaCertificate className="inline mr-1" /> Certifications
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/achievements"
+            className={({ isActive }) =>
+              isActive
+                ? "text-teal-400 font-bold border-b-2 border-teal-400 pb-1"
+                : "hover:text-teal-400 transition-colors"
+            }
+          >
+            <FaCertificate className="inline mr-1" /> Achievements
+          </NavLink>
+        </li>
 
         <li>
           <NavLink
